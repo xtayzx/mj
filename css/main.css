@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+
+    /* /// */
+    font-family: atten-new, "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --background: #fafafa;
+    --link: #3037ab;
+    --hover: #132367;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    padding: 2vh 0 0rem 0;
+}
+
+.no-display {
+    display: none;
+}
+
+.header-contents {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* MENU */
+
+button {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    float: right;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+button:focus,
+button:hover {
+    filter: invert(74%) sepia(81%) saturate(900%) hue-rotate(200deg) brightness(160%) contrast(70%);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+button:target {
+    transition: all 0.3s ease-in-out;
+}
+
+button:target {
+    filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* BOOTSTRAP MODIFICATIONS */
+.main-menu {
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu-item {
+    margin: 2rem 1rem;
+    text-align: center;
+    background-color: none;
+    transition: all 0.75s ease-in-out;
+    display: inline-flex;
+    opacity: 100%;
+    color: var(--link);
+}
+
+/* */
+
+.nav-link, .menu-item a {
+    color: var(--link);
+    font-family: 'archivo', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-variant-caps: all-small-caps;
+}
+
+.nav-link:hover, .menu-item a:hover, .nav-link:focus,
+.menu-item a:focus {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: all 0.6s ease-in-out
+}
+
+.main-photo, .contact-photo {
+    margin-left:auto;
+    margin-right:auto;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-photo {
+    width: 100%;
+}
+
+.grid-socials {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.grid-socials a {
+    margin: 1rem 1.2rem;
+    transition: all 0.6s ease-in-out;
+    display: inline-block;
+}
+
+
+.grid-socials a:hover,
+.grid-socials a:focus {
+    /* Surrender */
+    /* filter: invert(19%) sepia(97%) saturate(1189%) hue-rotate(360deg) brightness(99%) contrast(106%); */
+
+    /* Destiny CHANGEEE*/
+    filter: invert(23%) sepia(78%) saturate(6343%) hue-rotate(219deg) brightness(105%) contrast(102%);
+    transition: all 0.4s ease-in-out;
+}
+
+.content-container {
+    margin: 0rem 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.music {
+    margin: 1rem 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* FOOTER */
+
+footer {
+    /* background-color: red; */
+    display: block;
+    /* position: static; */
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2vh;
+    margin: 0.67em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.no-display {
+    display: none;
+}
+
+.upper-space {
+    padding-top: 1.2rem;
+}
+
+.under-space {
+    padding-bottom: 1.2rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+hr {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+}
+
+
+/* FONTS AND TEXT */
+
+h1, .title {
+    font-family: 'rubik mono one', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+  }
+
+.title:hover {
+    text-decoration: none;
+}
+  
+  
+h2, h3 {
+    font-family: 'archivo', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0.67em 0 0.67em 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+p.show, p.subheading {
+    font-family: 'archivo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 1.75em 0 0.67em 0;
+    text-transform: uppercase;
+}
+
+p, .subscribe label {
+    color: black;
+    font-weight: 300;
+    font-family: 'dm sans', sans-serif;
+    line-height: 1.5;
+}
+
+p a {
+    color: var(--link);
+    font-family: 'dm sans', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+p a:hover,
+p a:focus, .nav-link:focus, .nav-link:hover {
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.show-title a {
+    font-weight: 800;
+}
+
+p.show-margin.show {
+    margin: 0.67em 0;
+}
+
+.press-text {
+    font-size: 16pt;
+}
+
+.bio {
+    max-width: 780px;
+}
+
+/* PHOTO AND MEDIA */
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.photo-gallery, .music-gallery {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 0.75rem;
+    width: auto;
+}
+
+.row-1 {
+    grid-template-rows: 1fr;
+}
+
+.column-4 {
+    grid-template-columns: 1fr;
+}
+
+.column-3 {
+    grid-template-columns: 1fr;
+}
+
+.column-2 {
+    grid-template-columns: 1fr;
+}
+
+.column-1 {
+    grid-template-columns: 1fr;
+}
+
+.row-3 {
+    grid-template-rows: 1fr 1fr;
+}
+
+.row-3 {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.photo-block,
+.uneven-block {
+    vertical-align: center;
+    background-position: center;
+    display: flex;
+    position: relative;
+    cursor: crosshair;
+}
+
+.space {
+    padding-top: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+.margin {
+    margin-bottom: 2rem;
+}
+
+.video-player {
+    justify-content: center;
+    text-align: center;
+    max-height: 800px;
+    min-height: 300px;
+    height: 100%;
+}
+
+section {
+    max-width: 1320px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.album {
+    background-color: rgb(19, 35, 103);
+    padding: 1em 0em 3em 0em;
+    margin-bottom: 2em;
+    color: white;
+    max-width: auto;
+    height: 50%;
+    width: auto;
+}
+
+.album p {
+   margin: 0 0 1em 0;
+    color: white;
+}
+
+.album img {
+    margin: 0 0 2em 0;
+}
+
+.album .subheading {
+    font-size: 1.4rem;
+}
+
+.options {
+    color: white;
+    padding: 3em 0 0 0;
+}
+
+.options a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: all 0.6s ease-in-out
+}
+
+.options a:hover, .album a:focus{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: all 0.6s ease-in-out
+}
+
+
+/* Creative BC */
+.creativeBC {
+    max-width: 320px;
+    height: auto;
+}
+
+
+/*////Mailchimp/////*/ 
+
+#mc_embed_signup {
+    background-color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.mc-field-group input[type=text]{
+    display: inline-block;
+    font-family: 'dm sans', sans-serif;
+}
+
+.mc-field-group input {
+    max-width: 450px;
+    width: 80vw;
+    padding: 12px 20px;
+    margin: 0.5em 0 1em 0;
+}
+
+label {
+    display:block;
+    clear:both;
+    font-family: 'dm sans', sans-serif;
+}
+
+/* Subscribe Button */
+#mc-embedded-subscribe {
+    margin-top: 1em;
+    font-weight: 300;
+    font-family: 'dm sans', sans-serif;
+    padding: 15px 32px;
+    background-color: var(--link);
+    color: white;
+    border: none;
+}
+
+#mc-embedded-subscribe:hover {
+    background-color: var(--hover);
+    transition: all 0.3s ease-in-out;
+}
+
+/* fixing the videos on the index */
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.video {
+    flex: 1;
+    min-width: 300px; /* Adjust this value based on your needs */
+    margin: 10px;
+}
+
+/*/////////*/
+
+.me-md-auto {
+    margin-right: 0 !important;
+} 
+
+/* fix logo placement */
+@media (min-width: 1000px) {
+    .me-md-auto {
+        margin-right: auto !important;
+    }
+}
+   
+
+@media only screen and (max-height: 31rem) {
+    header {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 62.5rem) {
+    .column-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .column-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-photo {
+        width: 50%;
+    }
+
+    .content-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album {
+        padding: 1em 10em 4em 10em;
+    }
+}
