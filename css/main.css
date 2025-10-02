@@ -2,7 +2,7 @@
     box-sizing: border-box;
 
     /* /// */
-    font-family: atten-new, "Arial", sans-serif;
+    font-family: "Molengo", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -10,8 +10,8 @@
 
 :root {
     --background: #fafafa;
-    --link: #3037ab;
-    --hover: #132367;
+    --link: #b16a70;
+    --hover: #9b4e54;
 }
 
 body {
@@ -87,7 +87,7 @@ button:target {
 
 .nav-link, .menu-item a {
     color: var(--link);
-    font-family: 'archivo', sans-serif;
+    /* font-family: 'archivo', sans-serif; */
     font-weight: 600;
     font-size: 1.6rem;
     font-variant-caps: all-small-caps;
@@ -192,9 +192,9 @@ hr {
 /* FONTS AND TEXT */
 
 h1, .title {
-    font-family: 'rubik mono one', sans-serif;
+    /* font-family: 'Molengo', sans-serif; */
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 600;
     color: black;
     text-decoration: none;
     text-align: left;
@@ -206,7 +206,7 @@ h1, .title {
   
   
 h2, h3 {
-    font-family: 'archivo', sans-serif;
+    /* font-family: 'archivo', sans-serif; */
     font-size: 2.2rem;
     font-weight: 800;
     margin: 0.67em 0 0.67em 0;
@@ -219,23 +219,27 @@ h3 {
 }
 
 p.show, p.subheading {
-    font-family: 'archivo', sans-serif;
+    /* font-family: 'archivo', sans-serif; */
     font-size: 1.8rem;
     font-weight: 300;
     margin: 1.75em 0 0.67em 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 p, .subscribe label {
     color: black;
     font-weight: 300;
-    font-family: 'dm sans', sans-serif;
+    /* font-family: 'dm sans', sans-serif; */
     line-height: 1.5;
+}
+
+p.text {
+    text-align: left;
 }
 
 p a {
     color: var(--link);
-    font-family: 'dm sans', sans-serif;
+    /* font-family: 'dm sans', sans-serif; */
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -271,6 +275,18 @@ p.show-margin.show {
 
 .bio {
     max-width: 780px;
+}
+
+.molengo-regular {
+  font-family: "Molengo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.average-sans-regular {
+  font-family: "Average Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* PHOTO AND MEDIA */
@@ -353,8 +369,8 @@ section {
     margin-left: auto;
 }
 
-.album {
-    background-color: rgb(19, 35, 103);
+.block {
+    background-color: var(--hover);
     padding: 1em 0em 3em 0em;
     margin-bottom: 2em;
     color: white;
@@ -363,16 +379,19 @@ section {
     width: auto;
 }
 
-.album p {
+.block p {
    margin: 0 0 1em 0;
+   padding: 0 15em;
     color: white;
+    /* max-width: 780px; */
+    text-align: center;
 }
 
-.album img {
+.block img {
     margin: 0 0 2em 0;
 }
 
-.album .subheading {
+.block .subheading {
     font-size: 1.4rem;
 }
 
