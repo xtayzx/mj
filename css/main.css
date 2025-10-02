@@ -2,7 +2,8 @@
     box-sizing: border-box;
 
     /* /// */
-    font-family: "Molengo", sans-serif;
+    /* font-family: "Molengo", sans-serif; */
+    font-family: "houschka-rounded", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -35,7 +36,7 @@ header {
 
 /* MENU */
 
-button {
+/* button {
     width: 1.8rem;
     height: 1.8rem;
     background-color: rgb(0, 0, 0, 0);
@@ -63,7 +64,7 @@ button:target {
 button:target {
     filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0);
     transition: all 0.3s ease-in-out;
-}
+} */
 
 
 /* BOOTSTRAP MODIFICATIONS */
@@ -87,6 +88,7 @@ button:target {
 
 .nav-link, .menu-item a {
     color: var(--link);
+     /* font-family: 'Molengo', sans-serif; */
     /* font-family: 'archivo', sans-serif; */
     font-weight: 600;
     font-size: 1.6rem;
@@ -206,7 +208,7 @@ h1, .title {
   
   
 h2, h3 {
-    /* font-family: 'archivo', sans-serif; */
+    /* font-family: 'Molengo', sans-serif; */
     font-size: 2.2rem;
     font-weight: 800;
     margin: 0.67em 0 0.67em 0;
@@ -221,14 +223,14 @@ h3 {
 p.show, p.subheading {
     /* font-family: 'archivo', sans-serif; */
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 500;
     margin: 1.75em 0 0.67em 0;
     /* text-transform: uppercase; */
 }
 
 p, .subscribe label {
     color: black;
-    font-weight: 300;
+    font-weight: 500;
     /* font-family: 'dm sans', sans-serif; */
     line-height: 1.5;
 }
@@ -240,7 +242,7 @@ p.text {
 p a {
     color: var(--link);
     /* font-family: 'dm sans', sans-serif; */
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
 }
@@ -262,7 +264,7 @@ footer p {
 }
 
 .show-title a {
-    font-weight: 800;
+    font-weight: 600;
 }
 
 p.show-margin.show {
