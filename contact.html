@@ -20,7 +20,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Molengo&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Molengo&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://use.typekit.net/zer1eti.css">    
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2386D0KLN3"></script>
@@ -59,38 +60,42 @@
     </div>
 
     <section>
-        <div class="content-container">
+        <div class="content-container" >
             <form class="gform" method="POST" data-email="info.chigong.yoga@gmail.com" action="https://script.google.com/macros/s/AKfycbwCxvU2uyr5dndsnMeVKg4kVLnSqbFeiVk_Rgzd9dB8CqaJxov51fVa14WqEju6zsSb/exec">
                 
-                <div class="form-elements">
+                <div class="form-elements" id="form">
                     <fieldset class="pure-group">
                         <label for="name">Name: </label>
+                        <br>
                         <input id="name" name="name" placeholder="Name" required/>
                     </fieldset>
 
                     <fieldset class="pure-group">
                         <label for="email">Email Address:</label>
+                        <br>
                         <input id="email" name="email" type="email" value=""
                         required placeholder="Email"/>
                     </fieldset>
 
                     <fieldset class="pure-group">
                         <label for="message">Message: </label>
-                        <textarea id="message" name="message" rows="10"
+                        <br>
+                        <textarea id="message" name="message" rows="6"
                         placeholder="Write your message here..." required></textarea>
                     </fieldset>
 
                     <fieldset class="pure-group honeypot-field">
-                        <label for="honeypot">To help avoid spam, please leave this field blank.</label>
+                        <label for="honeypot"><i>To help avoid spam, please leave this field blank.</i></label>
+                        <br>
                         <input id="honeypot" type="text" name="honeypot" value="" />
                     </fieldset>
 
-                    <button class="button-success pure-button button-xlarge"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                    <button class="button-success pure-button button-xlarge"><i class="fa fa-paper-plane"></i>&nbsp;Send&nbsp;</button>
                 </div>
 
                 <div class="upper-space">
                 <!-- style="display:none;"> -->
-                <h2>Submitted!</h2>
+                <h2>Form Submitted!</h2>
                 <p>Thank you for contacting Chigong / Yoga! We will get back to your inquiry shortly.</p>
                 
                 </div>

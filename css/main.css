@@ -102,6 +102,11 @@ button:target {
     transition: all 0.6s ease-in-out
 }
 
+/* take out later? */
+.nav-link.active {
+    background-color: var(--hover) !important;
+}
+
 .main-photo, .contact-photo {
     margin-left:auto;
     margin-right:auto;
@@ -152,7 +157,17 @@ button:target {
     display: flex;
 }
 
+button {
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background: var(--link);
+    color: white;
+    border: none;
+}
 
+button:hover {
+    background-color: var(--hover);
+}
 /* FOOTER */
 
 footer {
@@ -188,6 +203,21 @@ hr {
     width: 100%;
     text-align: left;
     margin-left: 0;
+}
+
+#form {
+    max-width: 780;
+}
+
+input, #message {
+   width: 100%;
+   max-width: 550px;
+   padding-left: 0.5em;
+}
+
+input {
+    
+    line-height: 1.25;
 }
 
 
@@ -383,7 +413,7 @@ section {
 
 .block p {
    margin: 0 0 1em 0;
-   padding: 0 15em;
+   padding: 0 1em;
     color: white;
     /* max-width: 780px; */
     text-align: center;
@@ -416,17 +446,13 @@ section {
     transition: all 0.6s ease-in-out
 }
 
-
-/* Creative BC */
-.creativeBC {
-    max-width: 320px;
-    height: auto;
+#navbarSupportedContent {
+    justify-content: right;
 }
-
 
 /*////Mailchimp/////*/ 
 
-#mc_embed_signup {
+/* #mc_embed_signup {
     background-color: white;
     padding: 2em 0;
     text-align: center;
@@ -448,10 +474,10 @@ label {
     display:block;
     clear:both;
     font-family: 'dm sans', sans-serif;
-}
+} */
 
 /* Subscribe Button */
-#mc-embedded-subscribe {
+/* #mc-embedded-subscribe {
     margin-top: 1em;
     font-weight: 300;
     font-family: 'dm sans', sans-serif;
@@ -464,11 +490,11 @@ label {
 #mc-embedded-subscribe:hover {
     background-color: var(--hover);
     transition: all 0.3s ease-in-out;
-}
+} */
 
 /* fixing the videos on the index */
 
-.video-container {
+/* .video-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -476,14 +502,19 @@ label {
 .video {
     flex: 1;
     min-width: 300px; /* Adjust this value based on your needs */
-    margin: 10px;
-}
+    /* margin: 10px; }*/
 
 /*/////////*/
 
 .me-md-auto {
     margin-right: 0 !important;
 } 
+
+@media (max-width: 50rem) {
+    .justify-content-center {
+        justify-content: space-between !important;
+    }
+}
 
 /* fix logo placement */
 @media (min-width: 1000px) {
@@ -499,7 +530,7 @@ label {
     }
 }
 
-@media only screen and (min-width: 62.5rem) {
+@media only screen and (min-width: 50rem) {
     .column-3 {
         grid-template-columns: 1fr 1fr 1fr;
     }

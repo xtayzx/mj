@@ -44,19 +44,33 @@
     </header>
 
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="https://www.danlew.ca" class="d-flex align-items-center mb-3 mb-md-0 change me-md-auto link-body-emphasis text-decoration-none">
+        <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom navbar navbar-expand-md bg-body-tertiary">
+          <a href="https://www.danlew.ca" class="d-flex align-items-center mb-md-0 change me-md-auto link-body-emphasis text-decoration-none">
             <span class="title">Chigong / Yoga</span>
           </a>
     
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse justify-content-right" id="navbarSupportedContent">
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="https://www.danlew.ca" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="mindful-coaching" class="nav-link">Mindful Coaching</a></li>
-            <li class="nav-item"><a href="qigong" class="nav-link">Qigong</a></li>
-            <li class="nav-item"><a href="yoga" class="nav-link">Hatha Yoga</a></li>
+            <li class="nav-item"><a href="https://www.danlew.ca" aria-current="page" class="nav-link active">Home</a></li>
+            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Classes
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Hatha Yoga</a></li>
+                        <li><a class="dropdown-item" href="#">Qigong</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Mindful Coaching</a></li>
+                    </ul>
+                    </li>
+            <li class="nav-item"><a href="about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
           </ul>
-        </header>
+        </div>
+    </nav>
     </div>
 
     <section class="block">
@@ -86,8 +100,8 @@
     <section>
         <div class="content-container">
             <!-- Start of Meetings Embed Script -->
-            <!-- <div class="meetings-iframe-container" data-src="https://meetings-na3.hubspot.com/chi?embed=true"></div>
-            <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script> -->
+            <div class="meetings-iframe-container" data-src="https://meetings-na3.hubspot.com/chi?embed=true"></div>
+            <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
              <!-- End of Meetings Embed Script -->
         </div>
     </section>
@@ -97,6 +111,24 @@
             <p class="upper-space under-space text">Judy Lew is a Qigong / Yoga Master. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet nibh condimentum, lacinia quam ac, commodo magna. Nunc tincidunt magna sit amet lacus suscipit tincidunt. In luctus rhoncus velit, vitae commodo orci bibendum eget. Praesent non justo vel magna condimentum consequat. Nam semper sem congue, vehicula risus a, lacinia ligula. Maecenas efficitur pharetra dapibus. Sed quis nisl blandit, sagittis ex quis, semper quam. Mauris posuere quis sapien et malesuada. Sed auctor tortor sit amet diam fringilla, in ullamcorper arcu rhoncus.</p>
 
             <p class="under-space text">Cras varius diam nec fringilla iaculis. Etiam commodo non nisi vitae tempor. Suspendisse malesuada ex vel tempor fringilla. Suspendisse a arcu elementum metus tristique sagittis. Donec facilisis lorem quis lacus aliquet, in dapibus eros pulvinar. Nulla eget nunc quam. Etiam tempus bibendum ex, non efficitur lorem cursus sodales. Quisque interdum, ligula vitae imperdiet elementum, orci magna tempor dolor, a convallis est turpis dapibus turpis. Phasellus sagittis eget dui eget scelerisque. Vivamus molestie ultrices faucibus. Curabitur semper consequat lectus. Curabitur vehicula accumsan nunc, in euismod est ultricies non. In tempus sodales pharetra. Donec scelerisque eu orci sed malesuada. Nulla tempor augue non tincidunt mattis. Vivamus mauris tellus, luctus sed convallis eget, consequat quis nisi.</p>
+
+            <div class="photo-gallery column-1 row-1 margin">
+                <div class="photo-block">
+                    <img src="img/crow.jpg" alt="MJ Crow.">
+                </div>
+            </div>
+
+            <div class="photo-gallery column-3 row-1 margin">
+                <div class="photo-block">
+                    <img src="img/vert1.jpg" alt="MJ 1.">
+                </div>
+                <div class="photo-block">
+                    <img src="img/vert2.jpg" alt="MJ 2.">
+                </div>
+                <div class="photo-block">
+                    <img src="img/vert3.jpg" alt="MJ 3.">
+                </div>
+            </div>
         </div>
     </section>
 
