@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
 
-    /* /// */
+    /* /// change nunito to body and menu font - houschka as heading, change on html to 1 line with the css link */
     /* font-family: "Molengo", sans-serif; */
-    font-family: "houschka-rounded", sans-serif;
+    /* font-family: "houschka-rounded", sans-serif; */
+    font-family: "nunito", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
