@@ -50,6 +50,11 @@ header {
 
 /* MENU */
 
+.logo {
+    width: 5em;
+    height: 5em;
+}
+
 .nav-link, .menu-item a {
     color: var(--link);
     font-size: 1.6rem;
@@ -127,8 +132,19 @@ button {
     border: none;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: var(--hover);
+    color: white;
+}
+
+.button {
+    /* background-color: var(--link); */
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background: var(--link);
+    color: white;
+    border: none;
 }
 
 
