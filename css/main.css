@@ -239,7 +239,7 @@ p.show, p.subheading {
     margin: 1.75em 0 0.67em 0;
 }
 
-p.text {
+p.text, ul, li {
     text-align: left;
 }
 
@@ -385,6 +385,19 @@ section {
     width: auto;
 }
 
+.block-main {
+    /* background-color: var(--hover); */
+    background-color:rgba(52, 0, 17, 0.6);
+    background-image: url('../img/chigong-flowers.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: 100%;
+    padding: 8em 0em 8em 0em;
+    margin-bottom: 2em;
+    color: white;
+    max-width: auto;
+}
+
 .block p {
    margin: 0 0 1em 0;
    padding: 0 1em;
@@ -423,62 +436,6 @@ section {
 #navbarSupportedContent {
     justify-content: right;
 }
-
-/*////Mailchimp/////*/ 
-
-/* #mc_embed_signup {
-    background-color: white;
-    padding: 2em 0;
-    text-align: center;
-}
-
-.mc-field-group input[type=text]{
-    display: inline-block;
-    font-family: 'dm sans', sans-serif;
-}
-
-.mc-field-group input {
-    max-width: 450px;
-    width: 80vw;
-    padding: 12px 20px;
-    margin: 0.5em 0 1em 0;
-}
-
-label {
-    display:block;
-    clear:both;
-    font-family: 'dm sans', sans-serif;
-} */
-
-/* Subscribe Button */
-/* #mc-embedded-subscribe {
-    margin-top: 1em;
-    font-weight: 300;
-    font-family: 'dm sans', sans-serif;
-    padding: 15px 32px;
-    background-color: var(--link);
-    color: white;
-    border: none;
-}
-
-#mc-embedded-subscribe:hover {
-    background-color: var(--hover);
-    transition: all 0.3s ease-in-out;
-} */
-
-/* fixing the videos on the index */
-
-/* .video-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.video {
-    flex: 1;
-    min-width: 300px; /* Adjust this value based on your needs */
-    /* margin: 10px; }*/
-
-/*/////////*/
 
 .me-md-auto {
     margin-right: 0 !important;
