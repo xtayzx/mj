@@ -387,7 +387,7 @@ section {
 
 .block-main {
     /* background-color: var(--hover); */
-    background-color:rgba(52, 0, 17, 0.6);
+    background-color:rgba(52, 0, 17, 0.75);
     background-image: url('../img/chigong-flowers.jpg');
     background-repeat: no-repeat;
     background-blend-mode: darken;
