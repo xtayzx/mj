@@ -397,7 +397,7 @@ section {
     /* background-color: var(--hover); */
     background-color:rgba(52, 0, 17, 0.75);
     background-image: url('../img/judy-banner.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-blend-mode: darken;
     background-size: 100%;
     padding: 8em 0em 8em 0em;
